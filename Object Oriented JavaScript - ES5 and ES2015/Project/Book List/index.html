@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <title>Book List</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="d-flex justify-content-center mt-3">Add Book</h1>
+    <div class="row d-flex justify-content-center">
+      <div class="col-8 ">
+        <h6 id="alert" class="" style="display:none;"></h6>
+        <form id="book-form">
+          <div class="mb-3">
+            <label for="title" class="form-label fw-bold">Title</label>
+            <input type="text" class="form-control" id="title">
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label fw-bold">Author</label>
+            <input type="text" class="form-control" id="author">
+          </div>
+
+          <div class="mb-3">
+            <label for="isbn" class="form-label fw-bold">ISBN</label>
+            <input type="text" class="form-control" id="isbn">
+          </div>
+
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <input type="submit" id ="submit_button" class="btn btn-primary fw-bold" value= "Submit">
+          </div>
+
+        </form>
+
+        <div class="my-4">
+          <table class="table">
+            <thead class="table-secondary">
+              <tr>
+                <th scope="col fw-bold">Title</th>
+                <th scope="col fw-bold">Author</th>
+                <th scope="col fw-bold">ISBN</th>
+                <th scope="col fw-bold"></th>
+              </tr>
+            </thead>
+            <tbody class="table-secondary" id="bookList">
+            </tbody>
+          </table>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <input type="submit" id ="delete_button" class="btn btn-danger fw-bold" value= "Clear Books List">
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
